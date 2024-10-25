@@ -1,0 +1,1087 @@
+/** h1=>selector, color=>property, red=>value **/
+h1 {
+    color: red;
+    font-size: 60px; 
+}
+p {
+    color: blue;
+    font-size: 20px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+
+div p {
+    color: black;
+}
+
+.text-bk {
+    color: red;
+    text-align: center;
+    background-color: aqua;
+    margin: 20px;
+}
+
+.first-div {
+    background-color: blue;
+}
+.first-div p {
+    color: white;
+}
+
+#big-div {
+    width: 400px;
+}
+
+body {
+    background-image: url(Nature_photo.jpg);
+    background-size: 100%;
+    background-attachment: scroll;
+}
+div {
+    background-color: rgba(240, 128, 128, 0.3);
+    background-image: url(box6_image.jpg);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+   /** border style **/
+h1 {
+    border-style: groove;
+    border-width: 10px;
+    border-color: aqua;
+    border: 5px solid greenyellow;
+    border-right: 5px solid;
+    border-top: 5px solid;
+
+    border-left-style: dotted;
+    border-right-style: dashed;
+    border-top-style: double;
+    border-bottom-style: groove;
+}
+
+div {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+h2 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.baseline {
+    vertical-align: baseline;
+}
+
+.text-top {
+    vertical-align: text-top;
+}
+
+h2 {
+    letter-spacing: -2px;
+    text-indent: 90px;
+    line-height: 50px;
+    text-shadow: 0px 0px 10px red;
+}
+
+h1 {
+    font-family: serif;
+    font-family: sans-serif;
+    font-family: monospace;
+}
+
+i {
+    background-color: aqua;
+    font-size: 30px;
+    color: azure;
+    padding: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px 25px;
+    display: inline-block;
+    font-family: sans-serif;
+    border-radius: 35px;
+}
+
+a.btn:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: black;
+}
+
+
+/** CSS List **/
+ul {
+    background-color: aquamarine;
+    list-style-image: url(hand-right2.png);
+    padding: 25px;
+    list-style-position: inside;
+}
+
+li {
+    background-color: blueviolet;
+    padding: 5px;
+    border-bottom: 2px solid tomato;
+}
+
+/** CSS Table Style **/
+table, th, td {
+    border: 2px solid tomato;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+th {
+    height: 50px;
+    text-align: left;
+    background-color: aquamarine;
+}
+td {
+    background-color: blue;
+    color: white;
+    height: 35px;
+    vertical-align: center;
+}
+
+tr:hover th,
+tr:hover td{
+    background-color: brown;
+}
+
+.divone {
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 450px;
+}
+
+/** Display Property off CSS **/
+h1,
+p,
+span,
+div{
+    background-color: teal;
+}
+h1 {
+    display: inline-block;
+}
+span {
+    display: block;
+}
+a.btn {
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 10px;
+}
+.border:hover {
+    border: 2px solid black;
+}
+
+/** CSS Position Property**/
+
+body {
+    margin: 0;
+}
+div {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+}
+
+.main {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.sec {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    right: 20px;
+    position: fixed;
+}
+
+.child {
+    background-color: plum;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    
+}
+
+.stk {
+    background-color: gold;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+}
+
+/** Z-Index CSS property **/
+
+div {
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+}
+
+.main {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.child {
+    background-color: plum;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 5;
+}
+.child2 {
+    background-color: gold;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    top: 50%;
+    margin-top: -35px;
+    z-index: 4;
+}
+.child3 {
+    background-color: royalblue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+    z-index: 3;
+}
+
+/** CSS Overflow **/
+div {
+    background-color: #2d3436;
+    color: cadetblue;
+    padding: 20px 5%;
+    width: 90%;
+}
+
+/** CSS FLoat **/
+div {
+    background-color: #2d3436;
+    color: cadetblue;
+    padding: 20px 5%;
+    width: 90%;
+}
+img {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+ /** CSS navbar Using Float **/
+#nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #192a56;
+}
+#nav li {
+    float: left;
+}
+#nav li a {
+    display: inline-block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+}
+#nav li a:hover {
+    background-color: #c23616;
+}
+
+/** CSS Navbar Using Display property **/
+#display {
+    background-color: #44bd32;
+    margin: 0 0 15px;
+    padding: 0;
+    list-style: none;
+}
+#display li {
+    display: inline-block;
+}
+#display li a {
+    display: inline-block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+}
+#display li a:hover {
+    background-color: #c23616;
+}
+
+/** CSS Combinators/ Selector **/
+p {
+    color: blueviolet
+}
+div p {
+    font-weight: bolder;
+}
+div > p {
+    color: tomato;
+}
+div + p {
+    color: black;
+}
+div ~ p {
+    color: black;
+}
+
+/** CSS PSeudo class & Element **/
+
+a:hover {
+    color: #0f0;
+}
+li:first-child {
+    color: red;
+}
+li:last-child {
+    color: aqua;
+}
+li:nth-child(2n + 2) {
+    color: aquamarine;
+}
+
+body {
+    background-color: aqua;
+    background-image: url(Nature_photo.jpg);
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/** CSS Opacity **/
+img {
+    max-width: 90%;
+    opacity: 1;
+}
+img:hover {
+    opacity: 0.5;
+}
+
+.child_service {
+    text-align: center;
+    color: white;
+    width: 300px;
+    margin: 25px auto;
+    position: relative;
+}
+.child_service img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+.inner_service {
+    padding: 10% 5%;
+    display: none;
+    position: absolute;
+    width: 90%;
+    height: 87%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+.inner_service::after {
+    background-color: #1b1464;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+.child_service h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+.child_service a {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: yellowgreen;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.child_service:hover .inner_service {
+    display: block;
+}
+
+/** CSS Navigation Menu With Dropdown **/
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+#main_menu {
+    background-color: #1b1464;
+}
+#main_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+#main_menu li {
+    display: inline-block;
+    position: relative;
+}
+#main_menu li a {
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+}
+#main_menu li a:hover {
+    background-color: #0652dd;
+    border: 1px solid white;
+}
+/** Dropdown Menu Style **/
+#main_menu ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 48px;
+    background-color: #5758bb;
+    width: 200px;
+}
+#main_menu ul ul li {
+    display: block;
+    text-align: center;
+}
+#main_menu ul li:hover ul {
+    display: block;
+}
+#main_menu ul li:hover a {
+    background-color: #0652dd;
+}
+#main_menu ul li:hover li a {
+    background-color: #5758bb;
+}
+#main_menu ul ul li a:hover {
+    background-color: #192a56;
+}
+
+/** CSS Attribute Selector **/
+body {
+    font-family: 'poppins', sans-serif;
+}
+a[target] {
+    text-decoration: none;
+    color: tomato;
+}
+a[target="_self"] {
+    color: plum;
+}
+a[title~="pro"] {
+    color: aqua;
+    font-size: 35px;
+    font-weight: bold;
+}
+a[title~="BD"] {
+    color: purple;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/** Making a form with CSS & HTML **/
+
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+.contact {
+    width: 80%;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 5%;
+    text-align: center;
+}
+.contact h2 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+.contact p {
+    color: rgb(113, 113, 113);
+}
+.contact form {
+    margin-top: 25px;
+}
+.child_form {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.child_form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.child_form input, 
+.child_form select,
+.child_form textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 3%;
+    width: 94%;
+    font-family: 'poppins', sans-serif;
+}
+.child_form select {
+    width: 100%;
+}
+.child_form input[type='button'] {
+    width: 200px;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    color: white;
+    cursor: pointer;
+}
+.child_form input[type='button']:hover {
+    width: 200px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+.child_form:last-child {
+    margin-bottom: 0;
+}
+
+/** before nth child **/
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+.parent {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.child {
+    background-color: #b33939;
+    width: 50px;
+    padding-top: 10px;
+    height: 38px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+}
+p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/** nth child Starting **/
+
+.child:first-child {
+    background-color: #474787;
+}
+.child:last-child {
+    background-color: #474787;
+}
+.child:nth-child(1) {
+    background-color: #f329f5;
+}
+.child:nth-child(5) {
+    background-color: aquamarine;
+}
+.child:nth-last-child(2) {
+    background-color: aquamarine;
+}
+
+.child:nth-child(even) {
+    background-color: #474787;
+}
+
+.child:nth-child(3n+2) {
+    background-color: #474787;
+}
+
+/**form style **/
+form {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+input[type="text"] {
+    border: 1px solid #ddd;
+    padding: 15px 25px;
+    color: black;
+    font-size: 14px;
+    border-radius: 5px;
+    float: left;
+}
+input[type="button"] {
+    background-color: #227093;
+    border: 1px solid #227093;
+    padding: 15px 25px;
+    color: black;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+input:not(:placeholder-shown) + input[type="button"] {
+    display: block;
+}
+
+   /** CSS Math Fuctions **/ 
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+ }
+#test {
+    background-color: aqua;
+    width: calc(100% - 200px);
+    margin: 0 auto;
+}
+#test {
+    background-color: aqua;
+    width: max(70%, 700px);
+    margin: 0 auto;
+}
+
+/** CSS Box Model **/
+::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+.test {
+    width: 200px;
+    height: 250px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: white;
+    font-size: 12px;
+}
+#one {
+    background-color: #8c7ae6;
+    padding: 25px;
+    border: 10px solid black;
+    box-sizing: content-box;
+}
+#two {
+    background-color: #192a56;
+    padding: 25px;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+#learning {
+    box-sizing: border-box;
+}
+.child {
+    background-color: #8c7ae6;
+    padding: 10px 10px;
+    border: 5px solid yellowgreen;
+    box-sizing: border-box;
+    width: 32%;
+    float: left;
+    margin-right: 1%;
+}
+
+/** CSS Transitions **/
+body {
+    margin: 0;
+}
+.one {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 20px;
+    border: 2px solid tomato;
+    transition: width 2s, height 6s, border 5s;
+    transition: 5s;
+    transition-timing-function: ease-in-out;
+}
+.one:hover {
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    border: 5px solid black;
+}
+
+a {
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+    transition: 3s;
+}
+a:hover {
+    color: blue;
+}
+
+/** CSS Transforms **/
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+.one {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 20px;
+    border: 2px solid tomato;
+    transition: 3s;
+}
+.one:hover {
+    background-color: tomato;
+    border: 5px solid black;
+    transform: translate(100px);
+    transform: rotate(180deg);
+    transform: scale(2, 4);
+    transform: skew(-45deg);
+}
+
+/** CSS Animations **/
+ body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+.one {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 20px;
+    border: 2px solid tomato;
+    animation-name: learning;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+ @keyframes learning {
+    from {
+        background-color: blueviolet;
+        width: 100px;
+        height: 100px;
+    }
+    to {
+        background-color: tomato;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+ @keyframes learning {
+    0% {
+        background-color: blueviolet;
+        width: 100px;
+        height: 100px;
+    }
+    25% {
+        background-color: tomato;
+        width: 150px;
+        height: 150px;
+    }
+    50% {
+        background-color: peru;
+        width: 100px;
+        height: 100px;
+    }
+    75% {
+        background-color: green;
+        width: 200px;
+        height: 200px;
+    }
+    100% {
+        background-color: black;
+        width: 80px;
+        height: 80px;
+    }
+}
+.parent {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border: 2px solid;
+}
+.two {
+    background-color: aqua;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+    animation-name: rounds;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes learning2 {
+    0% {
+        background-color: aqua;
+        width: 250px;
+        height: 250px;
+    }
+    25% {
+        background-color: bisque;
+        width: 100px;
+        height: 100px;
+    }
+    50% {
+        background-color: blue;
+        width: 250px;
+        height: 250px;
+    }
+    75% {
+        background-color: brown;
+        width: 350px;
+        height: 350px;
+    }
+    100% {
+        background-color: palegreen;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+ @keyframes rounds {
+    0% {
+        background-color: aqua;
+        left: 0;
+        top: 0;
+    }
+    20% {
+        background-color: blue;
+        left: 300px;
+        top: 0;
+    }
+    40% {
+        background-color: green;
+        left: 300px;
+        top: 300px;
+    }
+    60% {
+        background-color: red;
+        left: 0;
+        top: 300px;
+    }
+    100% {
+        background-color: aqua;
+        left: 0;
+        top: 0;
+    }
+}
+/** CSS Variables **/
+:root {
+    --primary: #fdcb6e;
+    --sec: #a29bfe;
+    --darkcolor: #00b894;
+    --whitecolor: #fff;
+}
+body {
+    background-color: var(--sec);
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+.parent {
+    width: 90%;
+    margin: 20px auto;
+}
+.parent h2 {
+    text-align: center;
+    background-color: var(--primary);
+    padding: 10px;
+    color: var(--darkcolor);
+}
+.child {
+    background-color: var(--darkcolor);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--whitecolor);
+    font-size: 15px;
+}
+.child a {
+    background-color: var(--primary);
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--darkcolor);
+}
+.child a:hover {
+    background-color: var(--sec);
+    color: var(--primary);
+}
+
+ /** CSS Flexbox **/
+
+:root {
+    --primary: #fdcb6e;
+    --sec: #a29bfe;
+    --darkcolor: #00b894;
+    --whitecolor: #fff;
+}
+body {
+    background-color: var(--sec);
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+.parent {
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--primary);
+}
+.parent h2 {
+    text-align: center;
+    padding: 10px;
+    color: var(--whitecolor);
+    background-color: var(--darkcolor);
+}
+.main {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap; 
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    display: grid;
+}
+.child {
+    background-color: var(--darkcolor);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--whitecolor);
+    font-size: 15px;
+    margin: 1%;
+}
+.child a {
+    background-color: var(--primary);
+    padding: 10px 5px;
+    text-decoration: none;
+    color: var(--darkcolor);
+}
+.child a:hover {
+    background-color: var(--sec);
+    color: var(--primary);
+}
+.extra {
+    margin-bottom: 25px;
+    height: 300px;
+    background-color: var(--whitecolor);
+    align-items: baseline;
+}
+.extra p {
+    margin: 0;
+}
+.extra3 {
+    align-content: space-evenly;
+}
+.extra3 .child {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+}
+
+/** CSS Grid **/
+
+:root {
+    --primary: #fdcb6e;
+    --sec: #a29bfe;
+    --darkcolor: #00b894;
+    --whitecolor: #fff;
+}
+body {
+    background-color: var(--sec);
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+.parent {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: var(--primary);
+}
+.main {
+    background-color: var(--primary);
+    display: grid;
+    /* grid-template-columns: repeat(4, 100px); */
+    column-gap: 10px;
+    row-gap: 10px;
+    /* gap: 15px; */
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: minmax(80px, auto);
+    /* grid-template-rows: 1fr 2fr; */
+    /* justify-content: space-evenly;
+    align-content: space-evenly; */
+    /* height: 600px; */
+    /* grid-template-areas: 'header header'; */
+}
+.child {
+    background-color: var(--darkcolor);
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 80px;
+    color: var(--whitecolor);
+    font-size: 15px;
+    flex-basis: 28%;
+}
+.child a {
+    background-color: var(--primary);
+    padding: 8px 5px;
+    text-decoration: none;
+    color: var(--darkcolor);
+}
+.child a:hover {
+    background-color: var(--sec);
+    color: var(--primary);
+}
+/* .child:nth-child(4) p,
+.child:nth-child(5) p,
+.child:nth-child(6) p {
+    display: none;
+} */
+ /* .child:nth-child(1) {
+    grid-area: header;
+ } */
+  .child:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
